@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('berber.jpg'); /* Arka plan resmi */
+    background-color: black; /* Gri arka plan rengi */
+    background-size: contain; /* Resmin tamamını kaplamasını sağlar */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engeller */
+    background-position: center; /* Resmin merkezde konumlanmasını sağlar */
+    margin: 0; /* Sayfa kenar boşluklarını sıfırlar */
+    padding: 0; /* Sayfa iç boşluklarını sıfırlar */
+    height: 100vh; /* Yüksekliği tam ekran yapar */
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Arka plan rengini yarı saydam yaparak resmin görünmesini sağlar */
+    border-radius: 10px; /* Kenarları oval yapar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Başlık altına boşluk ekler */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Giriş alanları arasına boşluk ekler */
+    border: 1px solid #ccc; /* Kenarlık rengi */
+    border-radius: 5px; /* Oval kenar */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Buton rengi siyah */
+    color: white; /* Yazı rengi beyaz */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Oval kenar */
+    margin-bottom: 10px; /* Butonlar arası boşluk */
+    cursor: pointer; /* İmleci gösterir */
+}
+
+button:hover {
+    background-color: #333; /* Üzerine gelindiğinde koyulaşma efekti */
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berber Rezervasyon Sistemi</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyası -->
+</head>
+<body>
+    <div class="login-container">
+        <h1>Berberim</h1> <!-- Başlık güncellendi -->
+        <form id="login-form">
+            <input type="text" id="username" placeholder="E-posta veya Kullanıcı Adı" required>
+            <input type="password" id="password" placeholder="Şifre" required>
+            <button type="button" id="login-btn">Giriş Yap</button>
+            <p><a href="#">Şifrenizi mi unuttunuz?</a></p>
+        </form>
+        <p>Hesabınız yok mu? <a href="#">Kayıt Ol</a></p>
+    </div>
+
+    <script>
+        document.getElementById("login-btn").addEventListener("click", function() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Basit giriş kontrolü
+            var correctUsername = "scan";
+            var correctPassword = "1234";
+
+            // Eğer kullanıcı adı ve şifre doğruysa rezervasyon ekranına yönlendir
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = 'rez.html'; // Rezervasyon ekranına yönlendir
+            } else {
+                alert("Kullanıcı adı veya şifre yanlış!"); // Hata mesajı göster
+            }
+        });
+    </script>
+</body>
+</html>
+

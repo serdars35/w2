@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Arka plan rengi siyah */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reservation-container {
+    background: rgba(255, 255, 255, 0.1); /* Yarı saydam beyaz arka plan */
+    padding: 20px;
+    border-radius: 10px; /* Köşeleri oval yapar */
+    text-align: center;
+    width: 400px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Saat blokları arasına boşluk ekler */
+}
+
+.time-slot {
+    background-color: rgba(255, 255, 255, 0.2); /* Saat kutuları için yarı saydam renk */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-slot.break {
+    background-color: rgba(255, 0, 0, 0.5); /* Öğle arası için farklı renk */
+    justify-content: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey; /* Üzerine gelince buton rengi değişir */
+}
